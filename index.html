@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Audiowide&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="/src/style.css">
   </head>
   <body>
     <div id="app">
@@ -25,8 +26,40 @@
             <li><a href="/contact">Contact Us</a></li>
             <li><a href="/download" class="btn-primary">Download App</a></li>
           </ul>
+          <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+            <span></span><span></span><span></span>
+          </button>
         </div>
       </nav>
+
+      <!-- Mobile nav overlay -->
+      <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+
+      <!-- Mobile nav drawer -->
+      <aside class="mobile-nav-drawer" id="mobileNavDrawer">
+        <div class="drawer-header">
+          <a href="/" class="logo">
+            <img src="/ssc_4k_4k_nobg.webp" alt="Sri Sai Logo" class="logo-img">
+            <span class="brand">SRI SAI</span>
+          </a>
+          <button class="drawer-close" id="drawerClose" aria-label="Close menu">
+            <i data-lucide="x"></i>
+          </button>
+        </div>
+        <nav class="drawer-nav">
+          <a href="/features"><i data-lucide="star"></i>Features</a>
+          <a href="/menu"><i data-lucide="utensils"></i>Menu</a>
+          <a href="/contact"><i data-lucide="phone"></i>Contact Us</a>
+          <div class="drawer-divider"></div>
+          <a href="/privacy.html"><i data-lucide="shield"></i>Privacy Policy</a>
+          <a href="/terms.html"><i data-lucide="file-text"></i>Terms &amp; Conditions</a>
+          <a href="/refund-policy.html"><i data-lucide="rotate-ccw"></i>Refund Policy</a>
+          <a href="/shipping-policy.html"><i data-lucide="truck"></i>Shipping Policy</a>
+        </nav>
+        <div class="drawer-cta">
+          <a href="/download">Download the App</a>
+        </div>
+      </aside>
 
       <header class="hero">
         <div class="container hero-grid">
@@ -41,7 +74,7 @@
           <div class="hero-image-container">
             <img src="/src/assets/hero.png" alt="Fresh Chicken" class="hero-image">
             <div class="floating-card">
-              <!-- <span class="card-icon">🚀</span> -->
+              <i data-lucide="zap" style="width:18px;height:18px;color:var(--primary);flex-shrink:0;"></i>
               <span class="card-text">Fast Delivery in Chilakuripet</span>
             </div>
           </div>
@@ -73,6 +106,9 @@
               <p>Exclusively serving Chilakuripet with lightning-fast local delivery.</p>
             </div>
           </div>
+          <div class="scroll-hint" id="featuresScrollHint">
+            <span class="active"></span><span></span><span></span><span></span>
+          </div>
         </div>
       </section>
 
@@ -83,10 +119,10 @@
               <h2 class="section-title">Our Premium Cuts</h2>
               <p>Choose from a variety of fresh cuts prepared daily by our expert butchers.</p>
               <ul class="menu-list">
-                <li><span>Biryani Cut (With Bone)</span> <span class="price">From ₹120</span></li>
-                <li><span>Boneless Chicken</span> <span class="price">From ₹180</span></li>
-                <li><span>Chicken Breast</span> <span class="price">From ₹160</span></li>
-                <li><span>Drumsticks / Wings</span> <span class="price">From ₹140</span></li>
+                <li><span>Biryani Cut (With Bone)</span> <span class="price">From &#8377;120</span></li>
+                <li><span>Boneless Chicken</span> <span class="price">From &#8377;180</span></li>
+                <li><span>Chicken Breast</span> <span class="price">From &#8377;160</span></li>
+                <li><span>Drumsticks / Wings</span> <span class="price">From &#8377;140</span></li>
               </ul>
               <a href="#download" class="btn-primary">See Full Menu in App</a>
             </div>
@@ -128,6 +164,7 @@
           </div>
         </div>
       </section>
+
       <section id="download" class="cta-section">
         <div class="container text-center">
           <h2 class="cta-title">Ready to Taste the Difference?</h2>
@@ -174,7 +211,7 @@
                 <li><a href="/menu">Menu</a></li>
                 <li><a href="/download">Download</a></li>
                 <li><a href="/privacy.html">Privacy Policy</a></li>
-                <li><a href="/terms.html">Terms & Conditions</a></li>
+                <li><a href="/terms.html">Terms &amp; Conditions</a></li>
                 <li><a href="/refund-policy.html">Refund Policy</a></li>
                 <li><a href="/shipping-policy.html">Shipping Policy</a></li>
                 <li><a href="/contact">Contact Us</a></li>
@@ -191,6 +228,18 @@
           </div>
         </div>
       </footer>
+
+      <!-- Mobile sticky bottom bar -->
+      <div class="mobile-bottom-bar">
+        <a href="/download" class="bar-btn-primary">
+          <i data-lucide="download"></i>
+          Get the App
+        </a>
+        <a href="/contact" class="bar-btn-secondary">
+          <i data-lucide="phone"></i>
+          Call Us
+        </a>
+      </div>
     </div>
     <script type="module" src="/src/main.js"></script>
   </body>
