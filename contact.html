@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/webp" href="/ssc_4k_4k_nobg.webp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Sri Sai Delivery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+      .contact-content {
+        padding: 160px 0 160px;
+      }
+      .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+        align-items: start;
+      }
+      .contact-info-section h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        color: var(--primary);
+      }
+      .contact-info-section p {
+        font-size: 1.15rem;
+        color: var(--text-sub);
+        margin-bottom: 3rem;
+        max-width: 500px;
+      }
+      .contact-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+      .contact-card {
+        background: var(--surface);
+        padding: 1.5rem 2rem;
+        border-radius: var(--radius-md);
+        border: 1px solid var(--border);
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        transition: var(--transition);
+        box-shadow: var(--shadow-sm);
+      }
+      .contact-card:hover {
+        transform: translateX(10px);
+        box-shadow: var(--shadow-md);
+        border-color: var(--primary-light);
+      }
+      .contact-card-icon {
+        background: var(--primary-surface);
+        width: 56px;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        color: var(--primary);
+        transition: var(--transition);
+      }
+      .contact-card:hover .contact-card-icon {
+        background: var(--primary);
+        color: white;
+      }
+      .contact-card-icon i {
+        width: 24px;
+        height: 24px;
+      }
+      .contact-card-text h3 {
+        margin-bottom: 0.25rem;
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+      .contact-card-text p {
+        margin-bottom: 0;
+        font-size: 1rem;
+        color: var(--text-sub);
+      }
+      .contact-form-container {
+        background: var(--surface);
+        padding: 3rem;
+        border-radius: var(--radius-lg);
+        border: 1px solid var(--border);
+        box-shadow: var(--shadow-lg);
+      }
+      .form-group {
+        margin-bottom: 2rem;
+      }
+      .form-group label {
+        display: block;
+        margin-bottom: 0.75rem;
+        font-weight: 500;
+        color: var(--text-main);
+        font-size: 0.95rem;
+      }
+      .form-group input, .form-group textarea {
+        width: 100%;
+        padding: 1rem 1.25rem;
+        background: var(--bg);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-sm);
+        color: var(--text-main);
+        font-family: inherit;
+        font-size: 1rem;
+        transition: var(--transition);
+      }
+      .form-group input:focus, .form-group textarea:focus {
+        outline: none;
+        border-color: var(--primary);
+        background: white;
+        box-shadow: 0 0 0 4px var(--primary-surface);
+      }
+      .btn-submit {
+        width: 100%;
+        padding: 1.25rem;
+        background: var(--primary);
+        color: white;
+        border: none;
+        border-radius: var(--radius-sm);
+        font-size: 1.1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: var(--transition);
+        box-shadow: var(--shadow-md);
+      }
+      .btn-submit:hover {
+        background: var(--primary-dark);
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-lg);
+      }
+
+      @media (max-width: 992px) {
+        .contact-grid {
+          grid-template-columns: 1fr;
+          gap: 3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <nav class="navbar">
+        <div class="container">
+          <a href="/" class="logo">
+            <img src="/ssc_4k_4k_nobg.webp" alt="Sri Sai Logo" class="logo-img">
+            <span class="brand">SRI SAI CHICKEN CENTRE</span>
+          </a>
+          <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+            <li><a href="/download" class="btn-primary">Download App</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <main class="container contact-content">
+        <div class="contact-grid">
+          <div class="contact-info-section">
+            <h1>Get in Touch</h1>
+            <p>Have questions about your order or our services? We're here to help. Reach out to us through any of these channels.</p>
+            
+            <div class="contact-cards">
+              <div class="contact-card">
+                <div class="contact-card-icon"><i data-lucide="phone"></i></div>
+                <div class="contact-card-text">
+                  <h3>Phone</h3>
+                  <p>+91 90324 46556</p>
+                </div>
+              </div>
+              <div class="contact-card">
+                <div class="contact-card-icon"><i data-lucide="mail"></i></div>
+                <div class="contact-card-text">
+                  <h3>Email</h3>
+                  <p>srisaichickencentre92@gmail.com</p>
+                </div>
+              </div>
+              <div class="contact-card">
+                <div class="contact-card-icon"><i data-lucide="map-pin"></i></div>
+                <div class="contact-card-text">
+                  <h3>Address</h3>
+                  <p>Sri Sai Chicken Centre, Chilakuripet, AP.</p>
+                </div>
+              </div>
+              <div class="contact-card">
+                <div class="contact-card-icon"><i data-lucide="clock"></i></div>
+                <div class="contact-card-text">
+                  <h3>Business Hours</h3>
+                  <p>Mon - Sun: 7:00 AM - 9:00 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-container">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" placeholder="How can we help you?" required></textarea>
+              </div>
+              <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-info">
+              <a href="/" class="logo">
+                <img src="/ssc_4k_4k_nobg.webp" alt="Sri Sai Logo" class="logo-img">
+                <span class="brand">SRI SAI CHICKEN CENTRE</span>
+              </a>
+              <p>Sri Sai Chicken Centre, Chilakuripet, Andhra Pradesh.</p>
+              <div class="locate-us">
+                <a href="https://maps.app.goo.gl/XeSe4T228xdYnff5A" target="_blank" class="map-link">
+                  View on Google Maps
+                </a>
+              </div>
+            </div>
+            <div class="footer-links">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="/features">Features</a></li>
+                <li><a href="/menu">Menu</a></li>
+                <li><a href="/privacy.html">Privacy Policy</a></li>
+                <li><a href="/terms.html">Terms & Conditions</a></li>
+                <li><a href="/refund-policy.html">Refund Policy</a></li>
+                <li><a href="/shipping-policy.html">Shipping Policy</a></li>
+                <li><a href="/contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="footer-contact">
+              <h4>Contact Us</h4>
+              <p class="contact-item">Phone: +91 90324 46556</p>
+              <p class="contact-item">Email: srisaichickencentre92@gmail.com</p>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2026 Sri Sai Chicken Centre. Powered by Zenith Tek.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
